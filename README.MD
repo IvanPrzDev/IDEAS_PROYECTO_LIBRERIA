@@ -8,11 +8,32 @@ Cada libro estará asociado a un autor, un género y un usuario que lo registró
 
 Los libros tendrán un stock predeterminado de 1, por lo que no se podra reservar el mismo libro por dos usuarios a la vez.
 
+El loggin a la app tendrá autenticacion de 2 pasos, con app 2FA de google, email de verificación o mensaje a telefono verificado.
+
 # FUNCIONALIDAD RESERVA Y NOTIFICACIÓN DE DISPONIBILIDAD
 
 Las reservas se podrán hacer para un máximo de 20 días, el usurario podrá elegir la cantidad de 1-20 y la cantidad máxima de libros serán de 1 por el momento.
 
 Si un libro se encuentra en estado "reservado", los usuarios podrán pedir que sean notificados cuando el libro vuelva a estar "disponible".
+
+# COMPRA DE LIBROS DIGITALES EN PDF.
+
+Los libros en formato pdf estarán dispoibles en una cloud DB, listos para ser enviados tras la confirmación de compra al email del usuario. Además la app contará con un apartado de libreria digital donde el usuario podrá consultar los detalles de los libros comprados, vista previa, así como del enlace de descarga.
+
+# DB CLOUDINARY
+
+Control con resource_type: "authenticated". Cuando subes un archivo se puede definir que sea "authenticated".
+Eso significa que no tendrá un enlace público directo.
+
+Para accederlo, necesitas generar una URL firmada con tu API Key + Secret (o con el SDK).
+
+Ejemplo típico: solo el backend puede generar el enlace temporal tras verificar que el usuario pagó.
+
+# VENTA DE LIBROS FÍSICOS SIN EDITORIAL.
+
+Los autores que no tengan editorial distribuidora y quieran vender su libro en la librería tendran que pasar por un proceso de verificación por parte de nuestro personal para verificar si dicho acuerdo beneficiaria a ambas partes y cumple la normativa vigente.
+
+Las ganancias de dicho artículo se dividirán a partes iguales entre vendedor y autor.
 
 # RESERVAS DE SALA PARA FIRMA DE LIBROS O AUDIENCIAS
 
