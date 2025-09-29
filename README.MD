@@ -2,7 +2,7 @@
 
 Descripción:
 
-Quiero crear un REST server para una biblioteca que permita gestionar libros, autores, géneros y todo ello pueda ser asignado a un usuario, el cual podrá reservar dicho libro.
+Quiero crear un REST server para una biblioteca que permita gestionar libros, autores, géneros y todo ello pueda ser asignado a un usuario, el cual podrá reservar dicho libro físicamente o comprarlo de manera digital en formato PDF.
 
 Cada libro estará asociado a un autor, un género y un usuario que lo registró (admin). Entidades como género o editorial se irán añadiendo para darle más contenido a la base.
 
@@ -12,7 +12,7 @@ El loggin a la app tendrá autenticacion de 2 pasos, con app 2FA de google, emai
 
 # FUNCIONALIDAD RESERVA Y NOTIFICACIÓN DE DISPONIBILIDAD
 
-Las reservas se podrán hacer para un máximo de 20 días, el usurario podrá elegir la cantidad de 1-20 y la cantidad máxima de libros serán de 1 por el momento.
+Las reservas de libros físicos se podrán hacer para un máximo de 20 días, el usurario podrá elegir los días de 1-20 y la cantidad máxima de libros serán de 1 por el momento.
 
 Si un libro se encuentra en estado "reservado", los usuarios podrán pedir que sean notificados cuando el libro vuelva a estar "disponible".
 
@@ -20,7 +20,7 @@ Si un libro se encuentra en estado "reservado", los usuarios podrán pedir que s
 
 Los libros en formato pdf estarán dispoibles en una cloud DB, listos para ser enviados tras la confirmación de compra al email del usuario. Además la app contará con un apartado de libreria digital donde el usuario podrá consultar los detalles de los libros comprados, vista previa, así como del enlace de descarga.
 
-# DB CLOUDINARY
+# DB CLOUDINARY (PROSIVIONAL)
 
 Control con resource_type: "authenticated". Cuando subes un archivo se puede definir que sea "authenticated".
 Eso significa que no tendrá un enlace público directo.
