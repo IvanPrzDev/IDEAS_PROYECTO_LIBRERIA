@@ -16,6 +16,30 @@ Las reservas de libros físicos se podrán hacer para un máximo de 20 días, el
 
 Si un libro se encuentra en estado "reservado", los usuarios podrán pedir que sean notificados cuando el libro vuelva a estar "disponible".
 
+# LISTA DE DESEADOS/FAVORITOS/RECOMENDACIONES
+
+EL usuario podrá marcar libros, tanto fisicos como digitales, como favoritos para acceder a ellos cuando lo deseen.
+
+La app podrá recomendarte títulos similares basandose en tu historial de busqueda de la aplicación.
+
+# SISTEMA DE RESEÑAS Y CALIFICACIONES
+
+Los usuarios podrán reseñar y calificar los libros una vez hayan estado en su historial. Esto se mostrará en un apartado de reseñas dentro del modelo del libro.
+
+# HISTORIAL DE PRÉSTAMOS Y MULTAS
+
+Posibilidad de filtrar por libros o usuarios para saber quien ha tenido el libro o que usuarios lo han tenido además de las multas que hayan ido adquiriendo por retrasos en devoluciones.
+
+# NOTIFICACIONES INTELIGENTES
+
+- Recordatorios automáticos - 3 días antes de vencimiento de préstamo.
+
+- Notificaciones de nuevas adquisiciones - Por género/autor favorito.
+
+- Alertas de eventos - Firmas de libros, talleres, presentaciones.
+
+- Recordatorio de recogida - Para reservas que no se han recogido.
+
 # COMPRA DE LIBROS DIGITALES EN PDF.
 
 Los libros en formato pdf estarán dispoibles en una cloud DB, listos para ser enviados tras la confirmación de compra al email del usuario. Además la app contará con un apartado de libreria digital donde el usuario podrá consultar los detalles de los libros comprados, vista previa, así como del enlace de descarga.
@@ -42,6 +66,23 @@ Un autor podrá reservar por horas (max 4h), una sala de la librería que será 
 En dicho menú podrá solicitar el tipo de evento... firma de libros, lectura, etc... para que el admin pueda checkear y preparar dicha sala para el evento. 
 
 Los usuarios podrán recibir emails de aviso con información del evento (autor, libro, firma o lectura) para acudir si lo desean reservando una plaza (máx 50 usuarios).
+
+# REPORTES Y ANALÍTICAS
+
+- Dashboard para administradores - Libros más prestados, usuarios activos.
+- Estadísticas de lectura personal - Libros leídos por mes/año.
+- Informes de inventario - Libros perdidos, dañados, más populares.
+
+# MEMBRESIA PREMIUM
+
+Se podrá pagar una memrbresia premium mensual/anual, en la que el usuario tendrá características premium:
+    - Más días de préstamo
+    - Hasta 3 libros reservados a la vez
+    - Descuentos en la sección de libros digitales
+    - Una selección de libros digitales gratuitos que rotan mensualmente
+
+El usuario perderá acceso a todos los beneficios en caso de cancelar la membresía premium.
+Se estudiará profundamente este aspecto para ajustar las características adecuadamente.
 
 # COMPOSICIÓN DE ENTIDADES
 
